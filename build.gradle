@@ -6,7 +6,7 @@ apply plugin: 'war'
 
 buildscript {
     ext {
-        jodconverterVersion = '4.2.2'
+        jodconverterVersion = '4.2.3-alpha.1'
         springBootVersion = '2.1.2.RELEASE'
         springCoreVersion = '5.1.4.RELEASE'
         swaggerVersion = '2.9.2'
@@ -101,8 +101,8 @@ bootRun {
 }
 
 dependencies {
-    compile "org.jodconverter:jodconverter-local:$jodconverterVersion"
-    compile "org.jodconverter:jodconverter-spring-boot-starter:$jodconverterVersion"
+    compile "io.github.keyintegrity:jodconverter-local:$jodconverterVersion"
+    compile "io.github.keyintegrity:jodconverter-spring-boot-starter:$jodconverterVersion"
     compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
     compileOnly 'org.projectlombok:lombok'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
